@@ -4,16 +4,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>urpocketdigicam</title>
-    
-    
 </head>
 <body>
-    <header>
-        <img src="logourpocket.png" alt="logo" weight=40px height=40px> 
-        <h1><i>urpocketdigicam</i></h1>
-        <nav>
-            <ul>
+    <header class="header">
+        <img class="img_head" src="logourpocket.png" alt="logo" weight=40px height=40px> 
+        <h1 class="top_text"><i>urpocketdigicam</i></h1>
+        <nav class="header_nav">
+            <ul id="navigation">
                 <li><a href="">home</a></li>
                 <li><a href="">about</a></li>
                 <li><a href="">contact</a></li>
@@ -34,7 +33,7 @@
         </section>
         <section class="decs_product">
             <table border="1"  width = "150px">
-                <thead align="center">
+                <thead align="center" id="top_tabel">
                     <tr>
                         <!-- <td><img src="green.jpg" alt="" height="150px" weight = "150px"></td>
                         <td><img src="silver.jpg" alt="" height="150px" weight = "150px"></td>
@@ -48,23 +47,31 @@
             
                 <tbody align="center" height = "150px" weight = "1500px">
                     <tr>
-                        <td><img src="green.jpg" alt="" height="150px" weight = "150px"></td>
+                        <td ><img src="green.jpg" alt="" height="150px" weight = "150px"></td>
                         <td>Sony dsc w610 green</td>
                         <td>Rp 1.500.000</td>
                     </tr>
                     <tr>
-                        <td><img src="silver.jpg" alt="" height="150px" weight = "150px"></td>
+                        <td ><img src="silver.jpg" alt="" height="150px" weight = "150px"></td>
                         <td>Sony dsc w610 silver</td>
                         <td>Rp 1.100.000</td>
                     </tr>
                     <tr>
-                        <td><img src="pink.jpg" alt="" height="150px" weight = "150px"></td>
+                        <td ><img src="pink.jpg" alt="" height="150px" weight = "150px"></td>
                         <td>Sony dsc w610 pink</td>
                         <td>Rp 1.500.000</td>
                     </tr>
                 </tbody>
             </table>
         </section>
+        <section class="more_product">
+            <h1>More Product</h1> 
+            <section class="box_product">
+                <img id="box" src="green.jpg" alt="" width="250px">
+                <p>kamera digital</p>
+            </section>
+        </section>
+        
     </main>
 </body>
 
