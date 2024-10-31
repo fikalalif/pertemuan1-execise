@@ -2,25 +2,53 @@
 
 *{
     font-family:"Poppins";
+    padding: 0;
+    margin: 0;
 }
 
 .header{
+    display: flex;
     background-color: grey;
+    justify-content: space-between;
+
 }
 
-.header .top_text{
+.header_content{
+    display: flex;
+}
+.top_text{
     color: white;
+    padding-top: 20px;
+    padding-left: -30px;
 }
 
 .header .header_nav{
+    display: flex;
     color: white;
+    justify-content: space-between;
 }
-.header .header_nav #navigation{
-    
+#navigation{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    flex-direction: row;
+    color: aliceblue;
+    text-decoration: none;
 }
 
+
+li a {
+    padding: 3px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: black;
+    margin: 30px;
+}
+
+/* Main content */
+
 .header .img_head{
-    
+    padding: 30px;
 }
 
 .decs_product #top_tabel{
@@ -28,13 +56,75 @@
     background-color:grey;
 }
 
-.more_product .box_product{
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.content .service{
+    margin-right: 20px;
+}
+
+#desc {
+    justify-content: center;
+    justify-items: center;
+}
+
+.more_product{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box_product{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+
+}
+
+.more_product .box_product1{
     box-shadow : 34px 8px 30px -3px;
     padding: 10px;
     margin: 10px;
     width: 250px;
+    flex-grow: 1;
+}
+.more_product .box_product2{
+    box-shadow : 34px 8px 30px -3px;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    flex-grow: 1;
+}
+.more_product .box_product3{
+    box-shadow : 34px 8px 30px -3px;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    flex-grow: 1;
+}
+.more_product .box_product4{
+    box-shadow : 34px 8px 30px -3px;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    flex-grow: 1;
+}
+.more_product .box_product5{
+    box-shadow : 34px 8px 30px -3px;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    flex-grow: 1;
 }
 
 .form_message {
     background-color: grey;
+    color: white;
+    margin: 15px;
 }

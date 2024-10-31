@@ -8,30 +8,31 @@
     <title>urpocketdigicam</title>
 </head>
 <body>
-    <header class="header">
-        <img class="img_head" src="logourpocket.png" alt="logo" weight=40px height=40px> 
-        <h1 class="top_text"><i>urpocketdigicam</i></h1>
+    <header class="header"> 
+        <div class="header_content">
+            <img class="img_head" src="logourpocket.png" alt="logo" weight=40px height=40px> 
+            <h1 class="top_text"><i>urpocketdigicam</i></h1>
+        </div>
         <nav class="header_nav">
             <ul id="navigation">
-                <li><a href="">home</a></li>
-                <li><a href="">about</a></li>
-                <li><a href="">contact</a></li>
+                <li><a href="" class="nav">home</a></li>
+                <li><a href="" class="nav">about</a></li>
+                <li><a href="" class="nav">contact</a></li>
             </ul>
         </nav>
     </header>
-
+    
     <main>
         <section class="content">
-            <img src="kamera.jpg" alt="kamera" weight = "240px" height="360">
-            <h3><i>take every moment with ur pocket camera</i></h3>
+            <div class="service">
+                <h3><i>take every moment with ur pocket camera</i></h3>
+                <P><i>we sell, buy n consignment sell, all about pocket camera </i></P>
+            </div>
+            <img class="img_head" src="logourpocket.png" alt="logo" weight=200px height=200px> 
         </section>
-        <section class="service">
-            <P><i>we sell, buy n consignment sell, all about pocket camera </i></P>
-        </section>
-        <section class="product">
+            
+        <section class="decs_product" id="desc">
             <h2>Our Product</h2>
-        </section>
-        <section class="decs_product">
             <table border="1"  width = "150px">
                 <thead align="center" id="top_tabel">
                     <tr>
@@ -65,11 +66,29 @@
             </table>
         </section>
         <section class="more_product">
-            <h1>More Product</h1> 
-            <section class="box_product">
-                <img id="box" src="green.jpg" alt="" width="250px">
-                <p>kamera digital</p>
-            </section>
+            <h1>More Product</h1>
+            <div class="box_product">
+                <section class="box_product1">
+                    <img id="box" src="green.jpg" alt="" width="250px">
+                    <p>kamera digital</p>
+                </section>
+                <section class="box_product2">
+                    <img id="box" src="green.jpg" alt="" width="250px">
+                    <p>kamera digital</p>
+                </section>
+                <section class="box_product3">
+                    <img id="box" src="green.jpg" alt="" width="250px">
+                    <p>kamera digital</p>
+                </section>
+                <section class="box_product4">
+                    <img id="box" src="green.jpg" alt="" width="250px">
+                    <p>kamera digital</p>
+                </section>
+                <section class="box_product5">
+                    <img id="box" src="green.jpg" alt="" width="250px">
+                    <p>kamera digital</p>
+                </section>
+            </div> 
         </section>
         
     </main>
@@ -78,7 +97,6 @@
 <footer>
     <br>
     <br>
-    <main>
         <section class="form_message">
             <form action="/submit">
                 <fieldset>
@@ -93,13 +111,12 @@
                     <br>
                     <label for="">Message</label>
                     <textarea name="" id="" cols="20" rows="4" placeholder="enter your message"></textarea>
+                    <button>submit</button>
                     <p><b>or u can dm us with click this image</b></p>
                     <a href="https://www.instagram.com/urpocketdigicam?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target = "_blank" ><i class="fa-brands fa-instagram">urpocketdigicam</i></a>
                 </fieldset>
             </form>
             
         </section>
-    </main>
-    
 </footer>
 </html>
