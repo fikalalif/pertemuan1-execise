@@ -6,24 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>urpocketdigicam</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
-    <header class="header"> 
+
+    <nav class="header" id="header"> 
         <div class="header_content">
             <img class="img_head" src="logourpocket.png" alt="logo" weight=40px height=40px> 
             <h1 class="top_text"><i>urpocketdigicam</i></h1>
         </div>
-        <nav class="header_nav">
-            <ul id="navigation">
-                <li><a href="" class="nav">home</a></li>
-                <li><a href="" class="nav">about</a></li>
-                <li><a href="" class="nav">contact</a></li>
+        <div class="header_nav">
+            <div class="icon_menu" id="icon-menu">
+                <i class="ph-fill ph-list"></i>
+            </div> 
+            <ul id="navigation" class="hidden">
+                <li><a href="#home" id="nav1"><i>HOME</i></a></li>
+                <li><a href="#desc" id="nav1"><i>PRODUCT</i></a></li>
+                <li><a href="#contact" id="nav1"><i>CONTACT</i></a></li>  
             </ul>
-        </nav>
-    </header>
+            
+        </div>
+    </nav>
     
     <main>
-        <section class="content">
+        <section class="content" id="home">
             <div class="service">
                 <h3><i>take every moment with ur pocket camera</i></h3>
                 <P><i>we sell, buy n consignment sell, all about pocket camera </i></P>
@@ -40,7 +46,7 @@
                         <td><img src="silver.jpg" alt="" height="150px" weight = "150px"></td>
                         <td><img src="pink.jpg" alt="" height="150px" weight = "150px"></td> -->
                         <td>Camera</td>
-                        <td>Series</td>
+                        <td class="table_series">Series</td>
                         <td>Price</td>
                     </tr>
                     
@@ -69,35 +75,36 @@
             <h1>More Product</h1>
             <div class="box_product">
                 <section class="box_product1">
-                    <img id="box" src="green.jpg" alt="" width="250px">
-                    <p>kamera digital</p>
+                    <img id="box" src="sonyw830.jpg" alt="" width="250px">
+                    <p>Sony w830</p>
                 </section>
                 <section class="box_product2">
-                    <img id="box" src="green.jpg" alt="" width="250px">
-                    <p>kamera digital</p>
+                    <img id="box" src="sonyw730.jpg" alt="" width="250px">
+                    <p>Sony w730</p>
                 </section>
                 <section class="box_product3">
-                    <img id="box" src="green.jpg" alt="" width="250px">
-                    <p>kamera digital</p>
+                    <img id="box" src="s4200.jpg" alt="" width="250px">
+                    <p>Nikon s4200</p>
                 </section>
                 <section class="box_product4">
-                    <img id="box" src="green.jpg" alt="" width="250px">
-                    <p>kamera digital</p>
+                    <img id="box" src="ixy920.jpg" alt="" width="250px">
+                    <p>Canon ixy 920is</p>
                 </section>
                 <section class="box_product5">
-                    <img id="box" src="green.jpg" alt="" width="250px">
-                    <p>kamera digital</p>
+                    <img id="box" src="a2300.jpg" alt="" width="250px">
+                    <p>Canon a2300</p>
                 </section>
             </div> 
         </section>
         
     </main>
+    <script src="script.js"></script>
 </body>
 
 <footer>
     <br>
     <br>
-        <section class="form_message">
+        <section class="form_message" id="contact">
             <form action="/submit">
                 <fieldset>
                     <p><b>if u have interest about our product, u can message us here✉️✉️✉️</b></p>
