@@ -1,0 +1,97 @@
+<!-- 
+{% block title %}
+ini halaman homepage
+{% endblock %}
+
+{% block content %}
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" />
+  
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.slim.js"
+  integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+  crossorigin="anonymous">
+</script>
+<script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+
+ 
+
+<a href="/form-product">tambah data</a> 
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+        <script>
+            swal("Good job!", "You clicked the button!", "success");
+        </script>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+
+
+<h1>
+    ini adalah halaman homepage
+</h1>
+
+<table id="myTable" border="1px">
+    <thead>
+        <tr>
+            <td>Name Product</td>
+            <td>Image</td>
+            <td>Price</td>
+            <td>Category</td>
+            <td>Stok</td>
+            <td>Action</td>
+        </tr>
+    </thead>
+    
+    <tbody>
+        {% for product in product %}
+        <tr>
+            <td>{{product[1]}}</td>
+            <td><img src="{{product [2]}}" width="100"  alt=""></td>
+            <td>{{product[3]}}</td>
+            <td>{{product[6]}}</td>
+            <td>{{ 'Tersedia' if product[5] == True else 'Tidak Tersedia'}}</td>
+            <td> 
+                <a href="/form-edit-product/{{ product[0] }}">Update</a>
+                <a href="/delete-product/{{ product[0] }}">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% include 'layout/component/footer.html'%}
+
+<script>
+    $(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+</script> 
+
+{% endblock %} -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <tbody>
+        {% for product in product %}
+        <tr>
+            <td>{{product[1]}}</td>
+            <td>{{product[2]}}</td>
+            <td>{{product[3]}}</td>
+            <td>{{ 'Yes' if product[4] else 'No'}}</td>
+            <td>{{product[5]}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</body>
+</html>
